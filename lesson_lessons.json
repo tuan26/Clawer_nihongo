@@ -1,0 +1,419 @@
+{
+  "statusCode": 200,
+  "data": [
+    {
+      "progress": 100,
+      "id": "68d255c3d67e12153c1a4ac6",
+      "type": "TEXT",
+      "isRequired": false,
+      "title": "HƯỚNG DẪN & SGK NGỮ PHÁP CƠ BẢN",
+      "videoUrl": null,
+      "pos": -1
+    },
+    {
+      "progress": 100,
+      "id": "687f5ca1ea1381040c98f3db",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 1",
+      "videoUrl": null,
+      "pos": 0
+    },
+    {
+      "progress": 100,
+      "id": "6880ba56015d2dbb912e07aa",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 1 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 2.5
+    },
+    {
+      "progress": 0,
+      "id": "687f665dea1381040c9902cd",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 2",
+      "videoUrl": null,
+      "pos": 3
+    },
+    {
+      "progress": 0,
+      "id": "6880bb00015d2dbb912e084b",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 2 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 3.5
+    },
+    {
+      "progress": 0,
+      "id": "687f6758ea1381040c990368",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 3",
+      "videoUrl": null,
+      "pos": 4
+    },
+    {
+      "progress": 0,
+      "id": "6881ebc3015d2dbb912e452e",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 3 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 4.5
+    },
+    {
+      "progress": 0,
+      "id": "687f6794ea1381040c990375",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 4",
+      "videoUrl": null,
+      "pos": 5
+    },
+    {
+      "progress": 0,
+      "id": "6881ec3a015d2dbb912e46a9",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 4 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 5.5
+    },
+    {
+      "progress": 0,
+      "id": "687f6822ea1381040c990380",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 5",
+      "videoUrl": null,
+      "pos": 6
+    },
+    {
+      "progress": 0,
+      "id": "6881ec79015d2dbb912e47b1",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 5 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 6.25
+    },
+    {
+      "progress": 0,
+      "id": "6880b85f015d2dbb912e06b5",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Matome Bài 1-5",
+      "videoUrl": null,
+      "pos": 6.5
+    },
+    {
+      "progress": 0,
+      "id": "687f687eea1381040c9903d4",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 6",
+      "videoUrl": null,
+      "pos": 7
+    },
+    {
+      "progress": 0,
+      "id": "6881ecb3015d2dbb912e485c",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 6 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 7.5
+    },
+    {
+      "progress": 0,
+      "id": "68809396af56ce09b1e21be9",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 7",
+      "videoUrl": null,
+      "pos": 8
+    },
+    {
+      "progress": 0,
+      "id": "6881ed1b015d2dbb912e48b1",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 7 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 8.5
+    },
+    {
+      "progress": 0,
+      "id": "688095d4015d2dbb912dffce",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 8",
+      "videoUrl": null,
+      "pos": 9
+    },
+    {
+      "progress": 0,
+      "id": "6881ed58015d2dbb912e490a",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 8 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 9.5
+    },
+    {
+      "progress": 0,
+      "id": "6880965d015d2dbb912e0024",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 9",
+      "videoUrl": null,
+      "pos": 10
+    },
+    {
+      "progress": 0,
+      "id": "6881eded015d2dbb912e4ab6",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 9 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 10.25
+    },
+    {
+      "progress": 100,
+      "id": "688098ea015d2dbb912e0182",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 10",
+      "videoUrl": null,
+      "pos": 10.5
+    },
+    {
+      "progress": 100,
+      "id": "6881ee44015d2dbb912e4b73",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 10 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 10.625
+    },
+    {
+      "progress": 0,
+      "id": "6880b99a015d2dbb912e0728",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Matome bài 6-10",
+      "videoUrl": null,
+      "pos": 10.75
+    },
+    {
+      "progress": 100,
+      "id": "68809841015d2dbb912e00a6",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 11",
+      "videoUrl": null,
+      "pos": 11
+    },
+    {
+      "progress": 100,
+      "id": "6881ee8a015d2dbb912e4bc1",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 11 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 11.5
+    },
+    {
+      "progress": 100,
+      "id": "6881d5dd015d2dbb912e37ea",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 12",
+      "videoUrl": null,
+      "pos": 12
+    },
+    {
+      "progress": 100,
+      "id": "6881eebc015d2dbb912e4bf7",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 12 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 22
+    },
+    {
+      "progress": 100,
+      "id": "6881f182015d2dbb912e4f13",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 13",
+      "videoUrl": null,
+      "pos": 22.5
+    },
+    {
+      "progress": 100,
+      "id": "6886645d2e50f58ae281bcd4",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 13 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 22.625
+    },
+    {
+      "progress": 100,
+      "id": "6881f3ef015d2dbb912e4f7d",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 14",
+      "videoUrl": null,
+      "pos": 22.75
+    },
+    {
+      "progress": 100,
+      "id": "6881eef3015d2dbb912e4c56",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 14 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 23
+    },
+    {
+      "progress": 100,
+      "id": "6881f416015d2dbb912e4f8b",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 15",
+      "videoUrl": null,
+      "pos": 23.5
+    },
+    {
+      "progress": 100,
+      "id": "6881ef80015d2dbb912e4d03",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 15 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 24
+    },
+    {
+      "progress": 100,
+      "id": "6881f957015d2dbb912e502f",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Matome Bài 11-15",
+      "videoUrl": null,
+      "pos": 24.25
+    },
+    {
+      "progress": 100,
+      "id": "6881f445015d2dbb912e4fa9",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 16",
+      "videoUrl": null,
+      "pos": 24.5
+    },
+    {
+      "progress": 100,
+      "id": "6881efbc015d2dbb912e4d45",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 16 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 25
+    },
+    {
+      "progress": 100,
+      "id": "6881fa19015d2dbb912e5060",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 17",
+      "videoUrl": null,
+      "pos": 25.5
+    },
+    {
+      "progress": 100,
+      "id": "6881eff2015d2dbb912e4d93",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 17 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 26
+    },
+    {
+      "progress": 100,
+      "id": "6881f4bb015d2dbb912e4fb7",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 18",
+      "videoUrl": null,
+      "pos": 26.5
+    },
+    {
+      "progress": 100,
+      "id": "6881f02d015d2dbb912e4de9",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 18 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 27
+    },
+    {
+      "progress": 100,
+      "id": "6881fa83015d2dbb912e5071",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 19",
+      "videoUrl": null,
+      "pos": 27.5
+    },
+    {
+      "progress": 100,
+      "id": "6881f063015d2dbb912e4e24",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 19 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 28
+    },
+    {
+      "progress": 100,
+      "id": "6881feb5015d2dbb912e5230",
+      "type": "VIDEO",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 20",
+      "videoUrl": null,
+      "pos": 28.5
+    },
+    {
+      "progress": 100,
+      "id": "6881f0a0015d2dbb912e4e5a",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Bài 20 - Quiz luyện tập",
+      "videoUrl": null,
+      "pos": 29
+    },
+    {
+      "progress": 100,
+      "id": "6881fbbb015d2dbb912e510e",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Matome Bài 16-20",
+      "videoUrl": null,
+      "pos": 30
+    },
+    {
+      "progress": 0,
+      "id": "6881fc0c015d2dbb912e516a",
+      "type": "QUIZ",
+      "isRequired": false,
+      "title": "N1 Ngữ pháp - Test tổng",
+      "videoUrl": null,
+      "pos": 31
+    }
+  ]
+}

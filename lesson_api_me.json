@@ -1,0 +1,17 @@
+{
+  "statusCode": 200,
+  "data": {
+    "id": "6899478db1b65316744e3a3e",
+    "email": "maiquoctuan1994@gmail.com",
+    "fullName": "Mai Quốc Tuấn",
+    "phoneNumber": "0878755588",
+    "isActive": true,
+    "userCode": 100383,
+    "q": "mai-quoc-tuan-maiquoctuan1994gmailcom",
+    "locale": "vi",
+    "userType": "NEW_USER",
+    "userProfiles": [
+      "STUDENT"
+    ]
+  }
+}

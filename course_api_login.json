@@ -1,0 +1,17 @@
+{
+  "statusCode": 201,
+  "data": {
+    "user": {
+      "id": "6899478db1b65316744e3a3e",
+      "fullName": "Mai Quốc Tuấn",
+      "email": "maiquoctuan1994@gmail.com",
+      "userType": "NEW_USER",
+      "isActive": true,
+      "userProfiles": [
+        "STUDENT"
+      ]
+    },
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODk5NDc4ZGIxYjY1MzE2NzQ0ZTNhM2UiLCJ0dGwiOjYwNDgwMCwiaWF0IjoxNzc1OTU5OTU3LCJleHAiOjE3NzY1NjQ3NTd9.suwxSTovDTInFFxWm8mUNdL2-6jc-L03gCdUM65acZU",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODk5NDc4ZGIxYjY1MzE2NzQ0ZTNhM2UiLCJ0dGwiOjYwNDgwMCwicmVmcmVzaFRva2VuIjp0cnVlLCJpYXQiOjE3NzU5NTk5NTcsImV4cCI6MTc3NjU2NDc1N30.Mpa8t5UTvH3wDAgwFsfsbF396E110SXDZZWCOFHMlj0"
+  }
+}

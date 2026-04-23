@@ -1,0 +1,95 @@
+{
+  "statusCode": 200,
+  "data": [
+    {
+      "progress": 100,
+      "id": "69a121b22c933f947265c281",
+      "type": "TEXT",
+      "isRequired": false,
+      "title": "Tổng hợp list sách giáo khoa ",
+      "videoUrl": null,
+      "pos": 0
+    },
+    {
+      "progress": 100,
+      "id": "688ee5091276f6122175c6a1",
+      "type": "SLIDE",
+      "isRequired": false,
+      "title": "TỪ VỰNG CƠ BẢN N1 - NGHE TỪ VỰNG",
+      "videoUrl": null,
+      "pos": 1
+    },
+    {
+      "progress": 100,
+      "id": "688ee76f1276f6122175d349",
+      "type": "SLIDE",
+      "isRequired": false,
+      "title": "CHỮ HÁN CƠ BẢN N1",
+      "videoUrl": null,
+      "pos": 2
+    },
+    {
+      "progress": 100,
+      "id": "688ee8541276f6122175d9c1",
+      "type": "SLIDE",
+      "isRequired": false,
+      "title": "NGỮ PHÁP CƠ BẢN N1",
+      "videoUrl": null,
+      "pos": 3
+    },
+    {
+      "progress": 100,
+      "id": "6892db1e1276f6122195f1b8",
+      "type": "SLIDE",
+      "isRequired": false,
+      "title": "SGK_ĐỌC N1_MD8 - ĐOẢN VĂN Mail/Oshirase/Memo",
+      "videoUrl": null,
+      "pos": 4
+    },
+    {
+      "progress": 100,
+      "id": "6892db8f1276f6122195fd28",
+      "type": "SLIDE",
+      "isRequired": false,
+      "title": "SGK ĐỌC N1_MD13 - TÌM THÔNG TIN ",
+      "videoUrl": null,
+      "pos": 5
+    },
+    {
+      "progress": 100,
+      "id": "68a451b82b697d4821e79489",
+      "type": "SLIDE",
+      "isRequired": false,
+      "title": "SGK ĐỌC N1_MD8 - Đoản văn Nomail",
+      "videoUrl": null,
+      "pos": 5.5
+    },
+    {
+      "progress": 0,
+      "id": "689f4ad32b697d4821d233e3",
+      "type": "SLIDE",
+      "isRequired": false,
+      "title": "NGỮ PHÁP THỰC CHIẾN - NP ĐƠN",
+      "videoUrl": null,
+      "pos": 6
+    },
+    {
+      "progress": 100,
+      "id": "68dcd759fafc839dbea0e21e",
+      "type": "TEXT",
+      "isRequired": false,
+      "title": "Transcript Mondai Nghe",
+      "videoUrl": null,
+      "pos": 7
+    },
+    {
+      "progress": 0,
+      "id": "69699ca1d17377ffa26c4b05",
+      "type": "SLIDE",
+      "isRequired": false,
+      "title": "SGK & Hướng dẫn các bước học Kanji 1500",
+      "videoUrl": null,
+      "pos": 8
+    }
+  ]
+}

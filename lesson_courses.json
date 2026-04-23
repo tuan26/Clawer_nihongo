@@ -1,0 +1,57 @@
+{
+  "statusCode": 200,
+  "data": [
+    {
+      "id": "686735b9d348bb1ef7783dc9",
+      "title": "KHO GẠCH N1",
+      "price": 11990000,
+      "thumbnailUrl": "https://rikkeiedu-storage.s3.ap-southeast-2.amazonaws.com/uploads/1753266697517-Thumbnail N1 Chill Class.png",
+      "status": "ACTIVE",
+      "type": "ADVANCED",
+      "description": "JLPT N1",
+      "classId": "687dc7afea1381040c98af71",
+      "progress": 43.810522451987595,
+      "pendingSesson": 4,
+      "sessonCount": 26
+    },
+    {
+      "id": "687a0a92ea1381040c9888ef",
+      "title": "KANJI 1500",
+      "price": 2999000,
+      "thumbnailUrl": "https://rikkeiedu-storage.s3.ap-southeast-2.amazonaws.com/uploads/1753266926123-Thumbnail Youtube - Kanji 1500.png",
+      "status": "ACTIVE",
+      "type": "ADVANCED",
+      "description": "Khoá học cấp tốc 1500 chữ Hán từ trình độ N5 ~ N2",
+      "classId": "687dc7afea1381040c98af71",
+      "progress": 22.5,
+      "pendingSesson": 5,
+      "sessonCount": 8
+    },
+    {
+      "id": "688602b72e50f58ae281847d",
+      "title": "ĐIỂM DANH - N1 Chill Class",
+      "price": 2999000,
+      "thumbnailUrl": "https://rikkeiedu-storage.s3.ap-southeast-2.amazonaws.com/uploads/1753612975692-Thumbnail_N1_ChillClass.png",
+      "status": "ACTIVE",
+      "type": "ADVANCED",
+      "description": "Record và bài quiz điểm danh lớp N1",
+      "classId": "687dc7afea1381040c98af71",
+      "progress": 33.0188679245283,
+      "pendingSesson": 31,
+      "sessonCount": 53
+    },
+    {
+      "id": "68bc09b11a1ded9b8b7a30ac",
+      "title": "90 NGÀY ĐÊM MANTEN N1",
+      "price": 0,
+      "thumbnailUrl": "https://rikkeiedu-storage.s3.ap-southeast-2.amazonaws.com/uploads/1757153710798-Logo_vuông.png",
+      "status": "ACTIVE",
+      "type": "ADVANCED",
+      "description": "Chiến dịch 90 ngày đêm Manten N1 🔥🔥🔥",
+      "classId": "687dc7afea1381040c98af71",
+      "progress": 58.60000000000001,
+      "pendingSesson": 4,
+      "sessonCount": 9
+    }
+  ]
+}

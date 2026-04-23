@@ -1,0 +1,12 @@
+{
+  "statusCode": 200,
+  "data": {
+    "progress": 100,
+    "id": "69a121b22c933f947265c281",
+    "type": "TEXT",
+    "isRequired": false,
+    "title": "Tổng hợp list sách giáo khoa ",
+    "videoUrl": null,
+    "pos": 0
+  }
+}

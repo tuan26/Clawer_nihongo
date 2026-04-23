@@ -1,0 +1,109 @@
+{
+  "statusCode": 200,
+  "data": {
+    "items": [
+      {
+        "id": "688b346107a3ea9f7fa57f59",
+        "title": "Hướng dẫn và SGK",
+        "pos": 0.5,
+        "isRequired": false,
+        "progress": 80,
+        "firstLessonId": "69a121b22c933f947265c281"
+      },
+      {
+        "id": "68d1265dd67e12153c11081f",
+        "title": "ĐỌC BỔ TƯỜNG N1 (HV DÙNG ĐIỆN THOẠI)",
+        "pos": 0.5078125,
+        "isRequired": false,
+        "progress": 0,
+        "firstLessonId": "68d12681d67e12153c1109b9"
+      },
+      {
+        "id": "69699824d17377ffa26c44ac",
+        "title": "KANJI 1500",
+        "pos": 0.515625,
+        "isRequired": false,
+        "progress": 0,
+        "firstLessonId": "69699f8cd17377ffa26c5597"
+      },
+      {
+        "id": "686735c3d348bb1ef7783df5",
+        "title": "TỪ VỰNG CƠ BẢN - NGHE TỪ VỰNG N1",
+        "pos": 0.53125,
+        "isRequired": false,
+        "progress": 69.77777777777777,
+        "firstLessonId": "68d25010d67e12153c1a1a74"
+      },
+      {
+        "id": "68673613d348bb1ef7783e4f",
+        "title": "CHỮ HÁN CƠ BẢN N1",
+        "pos": 0.546875,
+        "isRequired": false,
+        "progress": 62.68072289156627,
+        "firstLessonId": "68d2543fd67e12153c1a3e0f"
+      },
+      {
+        "id": "68673666d348bb1ef7783e6e",
+        "title": "NGỮ PHÁP CƠ BẢN N1",
+        "pos": 0.5546875,
+        "isRequired": false,
+        "progress": 58.69565217391304,
+        "firstLessonId": "68d255c3d67e12153c1a4ac6"
+      },
+      {
+        "id": "68673628d348bb1ef7783e57",
+        "title": "TỪ VỰNG CHỮ HÁN THỰC CHIẾN N1",
+        "pos": 0.55859375,
+        "isRequired": false,
+        "progress": 53.333333333333336,
+        "firstLessonId": "68ca53eeba3ecaa9da270272"
+      },
+      {
+        "id": "68678f9800316ef9c1bef333",
+        "title": "NGỮ PHÁP THỰC CHIẾN N1",
+        "pos": 0.560546875,
+        "isRequired": false,
+        "progress": 50.94339622641509,
+        "firstLessonId": "68d25323d67e12153c1a35f4"
+      },
+      {
+        "id": "6867363cd348bb1ef7783e63",
+        "title": "TỪ VỰNG NÂNG CAO N1",
+        "pos": 0.5615234375,
+        "isRequired": false,
+        "progress": 78.68852459016394,
+        "firstLessonId": "68d257e2d67e12153c1a6002"
+      },
+      {
+        "id": "68678faf00316ef9c1bef33b",
+        "title": "NGỮ PHÁP NÂNG CAO N1",
+        "pos": 0.5616455078125,
+        "isRequired": false,
+        "progress": 9.67741935483871,
+        "firstLessonId": "68d25999d67e12153c1a7340"
+      },
+      {
+        "id": "689aabb55f67d69481088ae3",
+        "title": "ĐỌC PHÁT TRIỂN TƯ DUY N1",
+        "pos": 0.561798095703125,
+        "isRequired": false,
+        "progress": 100.00000000000001,
+        "firstLessonId": "68d1240ad67e12153c10e864"
+      },
+      {
+        "id": "6881d8a8015d2dbb912e392e",
+        "title": "ĐỌC N1: MD 13 - TÌM THÔNG TIN N1",
+        "pos": 0.56182861328125,
+        "isRequired": false,
+        "progress": 100.00000000000001,
+        "firstLessonId": "68d25a54d67e12153c1a78d3"
+      }
+    ],
+    "meta": {
+      "limit": 12,
+      "offset": 0,
+      "total": 26,
+      "totalPages": 3
+    }
+  }
+}

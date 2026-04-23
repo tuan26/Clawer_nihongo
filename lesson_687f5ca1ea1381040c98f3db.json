@@ -1,0 +1,12 @@
+{
+  "statusCode": 200,
+  "data": {
+    "progress": 100,
+    "id": "687f5ca1ea1381040c98f3db",
+    "type": "VIDEO",
+    "isRequired": false,
+    "title": "N1 Ngữ pháp - Bài 1",
+    "videoUrl": null,
+    "pos": 0
+  }
+}
