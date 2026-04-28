@@ -1,0 +1,1178 @@
+{
+  "id": "69699b03d17377ffa26c4803",
+  "exam": {
+    "id": "687a16afea1381040c988cd4",
+    "name": "Quiz - Buổi 1",
+    "questionMapping": [
+      {
+        "id": "687a1222ea1381040c988b94",
+        "content": "TỬ (con)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "子",
+            "isCorrect": true
+          },
+          {
+            "content": "女",
+            "isCorrect": false
+          },
+          {
+            "content": "好",
+            "isCorrect": false
+          },
+          {
+            "content": "心",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b93",
+        "content": "TÂM (trái tim)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "子",
+            "isCorrect": false
+          },
+          {
+            "content": "心",
+            "isCorrect": true
+          },
+          {
+            "content": "必",
+            "isCorrect": false
+          },
+          {
+            "content": "女",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b92",
+        "content": "好",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "TÂM (trái tim)",
+            "isCorrect": false
+          },
+          {
+            "content": "NỮ (con gái)",
+            "isCorrect": false
+          },
+          {
+            "content": "HẢO (thích)",
+            "isCorrect": true
+          },
+          {
+            "content": "TẤT (tất yếu)",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b91",
+        "content": "必",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "HẢO (thích)",
+            "isCorrect": false
+          },
+          {
+            "content": "TẤT (tất yếu)",
+            "isCorrect": true
+          },
+          {
+            "content": "TÂM (trái tim)",
+            "isCorrect": false
+          },
+          {
+            "content": "NỮ (con gái)",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b90",
+        "content": "TÔN (cháu)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "孫",
+            "isCorrect": true
+          },
+          {
+            "content": "系",
+            "isCorrect": false
+          },
+          {
+            "content": "遜",
+            "isCorrect": false
+          },
+          {
+            "content": "係",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b8f",
+        "content": "HỆ (hệ thống)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "遜",
+            "isCorrect": false
+          },
+          {
+            "content": "系",
+            "isCorrect": true
+          },
+          {
+            "content": "糸",
+            "isCorrect": false
+          },
+          {
+            "content": "孫",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b8e",
+        "content": "遜",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "TỐN (khiêm tốn)",
+            "isCorrect": true
+          },
+          {
+            "content": "TÔN (cháu)",
+            "isCorrect": false
+          },
+          {
+            "content": "HỆ (hệ thống)",
+            "isCorrect": false
+          },
+          {
+            "content": "MỊCH (sợi tơ)",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b8d",
+        "content": "係",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "TỐN (khiêm tốn)",
+            "isCorrect": false
+          },
+          {
+            "content": "TÔN (cháu)",
+            "isCorrect": false
+          },
+          {
+            "content": "MỊCH (sợi tơ)",
+            "isCorrect": false
+          },
+          {
+            "content": "HỆ (quan hệ)",
+            "isCorrect": true
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b8c",
+        "content": "QUAN (quan sát)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "視",
+            "isCorrect": false
+          },
+          {
+            "content": "観",
+            "isCorrect": true
+          },
+          {
+            "content": "見",
+            "isCorrect": false
+          },
+          {
+            "content": "覚",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b8b",
+        "content": "GIÁC (tri giác)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "見",
+            "isCorrect": false
+          },
+          {
+            "content": "視",
+            "isCorrect": false
+          },
+          {
+            "content": "目",
+            "isCorrect": false
+          },
+          {
+            "content": "覚",
+            "isCorrect": true
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b8a",
+        "content": "視",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "QUAN (quan sát)",
+            "isCorrect": false
+          },
+          {
+            "content": "KIẾN (chứng kiến)",
+            "isCorrect": false
+          },
+          {
+            "content": "THỊ (thị lực)",
+            "isCorrect": true
+          },
+          {
+            "content": "GIÁC (tri giác)",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b89",
+        "content": "見",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "THỊ (thị lực)",
+            "isCorrect": false
+          },
+          {
+            "content": "GIÁC (tri giác)",
+            "isCorrect": false
+          },
+          {
+            "content": "QUAN (quan sát)",
+            "isCorrect": false
+          },
+          {
+            "content": "KIẾN (chứng kiến)",
+            "isCorrect": true
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b88",
+        "content": "PHỤC (phục kích)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "太",
+            "isCorrect": false
+          },
+          {
+            "content": "駄",
+            "isCorrect": false
+          },
+          {
+            "content": "伏",
+            "isCorrect": true
+          },
+          {
+            "content": "鉄",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b87",
+        "content": "THIẾT (sắt)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "駄",
+            "isCorrect": false
+          },
+          {
+            "content": "犬",
+            "isCorrect": false
+          },
+          {
+            "content": "鉄",
+            "isCorrect": true
+          },
+          {
+            "content": "伏",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b86",
+        "content": "献",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "TRẬT (trật tự)",
+            "isCorrect": false
+          },
+          {
+            "content": "KHUYỂN (chó)",
+            "isCorrect": false
+          },
+          {
+            "content": "HIẾN (cống hiến)",
+            "isCorrect": true
+          },
+          {
+            "content": "THÁI (béo)",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b85",
+        "content": "駄",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "PHỤC (phục kích)",
+            "isCorrect": false
+          },
+          {
+            "content": "ĐÀ (lãng phí)",
+            "isCorrect": true
+          },
+          {
+            "content": "THIẾT (sắt)",
+            "isCorrect": false
+          },
+          {
+            "content": "KHUYỂN (chó)",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b84",
+        "content": "秩",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "THÁI (béo)",
+            "isCorrect": false
+          },
+          {
+            "content": "TRẬT (trật tự)",
+            "isCorrect": true
+          },
+          {
+            "content": "HIẾN (cống hiến)",
+            "isCorrect": false
+          },
+          {
+            "content": "THIẾT (sắt)",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b83",
+        "content": "PHU (chồng)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "矢",
+            "isCorrect": false
+          },
+          {
+            "content": "丈",
+            "isCorrect": false
+          },
+          {
+            "content": "医",
+            "isCorrect": false
+          },
+          {
+            "content": "夫",
+            "isCorrect": true
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b82",
+        "content": "ĐẠI (lớn)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "丈",
+            "isCorrect": false
+          },
+          {
+            "content": "人",
+            "isCorrect": false
+          },
+          {
+            "content": "大",
+            "isCorrect": true
+          },
+          {
+            "content": "天",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b81",
+        "content": "医",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "Y (y học)",
+            "isCorrect": true
+          },
+          {
+            "content": "THIÊN (trời)",
+            "isCorrect": false
+          },
+          {
+            "content": "NHÂN (người)",
+            "isCorrect": false
+          },
+          {
+            "content": "THỈ (mũi tên)",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b80",
+        "content": "天",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "Y (y học)",
+            "isCorrect": false
+          },
+          {
+            "content": "THIÊN (trời)",
+            "isCorrect": true
+          },
+          {
+            "content": "THỈ (mũi tên)",
+            "isCorrect": false
+          },
+          {
+            "content": "NHÂN (người)",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b7f",
+        "content": "丈",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "ĐẠI (lớn)",
+            "isCorrect": false
+          },
+          {
+            "content": "TRƯỢNG (trượng phu)",
+            "isCorrect": true
+          },
+          {
+            "content": "PHU (chồng)",
+            "isCorrect": false
+          },
+          {
+            "content": "THỈ (mũi tên)",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b7e",
+        "content": "NHỊ (mồi câu)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "餌",
+            "isCorrect": true
+          },
+          {
+            "content": "耳",
+            "isCorrect": false
+          },
+          {
+            "content": "貝",
+            "isCorrect": false
+          },
+          {
+            "content": "敗",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b7d",
+        "content": "BẠI (bại trận)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "餌",
+            "isCorrect": false
+          },
+          {
+            "content": "敗",
+            "isCorrect": true
+          },
+          {
+            "content": "耳",
+            "isCorrect": false
+          },
+          {
+            "content": "貝",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b7c",
+        "content": "負",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "BẠI (bại trận)",
+            "isCorrect": false
+          },
+          {
+            "content": "BỐI (sò)",
+            "isCorrect": false
+          },
+          {
+            "content": "NHỊ (mồi câu)",
+            "isCorrect": false
+          },
+          {
+            "content": "PHỤ (thua)",
+            "isCorrect": true
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b7b",
+        "content": "貝",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "BỐI (sò)",
+            "isCorrect": true
+          },
+          {
+            "content": "PHỤ (thua)",
+            "isCorrect": false
+          },
+          {
+            "content": "NHĨ (tai)",
+            "isCorrect": false
+          },
+          {
+            "content": "NHỊ (mồi câu)",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b7a",
+        "content": "NGOA (giày dép)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "靴",
+            "isCorrect": true
+          },
+          {
+            "content": "花",
+            "isCorrect": false
+          },
+          {
+            "content": "革",
+            "isCorrect": false
+          },
+          {
+            "content": "貨",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b79",
+        "content": "HÓA (hàng hóa)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "花",
+            "isCorrect": false
+          },
+          {
+            "content": "化",
+            "isCorrect": false
+          },
+          {
+            "content": "貨",
+            "isCorrect": true
+          },
+          {
+            "content": "靴",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b78",
+        "content": "革",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "HÓA (hàng hóa)",
+            "isCorrect": false
+          },
+          {
+            "content": "CÁCH (cải cách)",
+            "isCorrect": true
+          },
+          {
+            "content": "NGOA (giày dép)",
+            "isCorrect": false
+          },
+          {
+            "content": "HOA (bông hoa)",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b77",
+        "content": "化",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "HÓA (biến hóa)",
+            "isCorrect": true
+          },
+          {
+            "content": "HOA (bông hoa)",
+            "isCorrect": false
+          },
+          {
+            "content": "HÓA (hàng hóa)",
+            "isCorrect": false
+          },
+          {
+            "content": "CÁCH (cải cách)",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b76",
+        "content": "ỨC (100 triệu)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "憶",
+            "isCorrect": false
+          },
+          {
+            "content": "意",
+            "isCorrect": false
+          },
+          {
+            "content": "音",
+            "isCorrect": false
+          },
+          {
+            "content": "億",
+            "isCorrect": true
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b75",
+        "content": "Ý (ý chí)",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "意",
+            "isCorrect": true
+          },
+          {
+            "content": "音",
+            "isCorrect": false
+          },
+          {
+            "content": "憶",
+            "isCorrect": false
+          },
+          {
+            "content": "億",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b74",
+        "content": "憶",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "ÂM (âm thanh)",
+            "isCorrect": false
+          },
+          {
+            "content": "ÁM (tối)",
+            "isCorrect": false
+          },
+          {
+            "content": "ỨC (ký ức)",
+            "isCorrect": true
+          },
+          {
+            "content": "Ý (ý chí)",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      },
+      {
+        "id": "687a1222ea1381040c988b73",
+        "content": "暗",
+        "type": "MULTIPLE_CHOICE_HORIZONTAL",
+        "tag": "kanji-1500_buoi-1",
+        "options": [],
+        "imageUrl": "",
+        "audioUrl": "",
+        "explain": "",
+        "sortingAnswers": [],
+        "multipleChoiceAnswers": [],
+        "matchingAnswers": [],
+        "multipleChoiceHorizontal": [
+          {
+            "content": "ÂM (âm thanh)",
+            "isCorrect": false
+          },
+          {
+            "content": "ÁM (tối)",
+            "isCorrect": true
+          },
+          {
+            "content": "ỨC (100 triệu)",
+            "isCorrect": false
+          },
+          {
+            "content": "Ý (ý chí)",
+            "isCorrect": false
+          }
+        ],
+        "fillInBlank": [],
+        "chooseAnswerInBlank": [],
+        "essayAnswers": []
+      }
+    ]
+  },
+  "lesson": {
+    "id": "69699ad2d17377ffa26c4745",
+    "type": "QUIZ",
+    "title": "Quiz - Buổi 1",
+    "isRequired": false,
+    "videoUrl": null,
+    "pos": 5,
+    "sessonId": "69699824d17377ffa26c44ac"
+  },
+  "randomAnswer": true,
+  "randomQuestion": true,
+  "showSolution": true,
+  "showAnswer": true
+}

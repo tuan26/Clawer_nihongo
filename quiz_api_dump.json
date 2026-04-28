@@ -1,0 +1,1101 @@
+[
+  {
+    "url": "https://api-mankai.staging.rikkei.edu.vn/v1/users/me",
+    "data": {
+      "statusCode": 200,
+      "data": {
+        "id": "6899478db1b65316744e3a3e",
+        "email": "maiquoctuan1994@gmail.com",
+        "fullName": "Mai Quốc Tuấn",
+        "phoneNumber": "0878755588",
+        "isActive": true,
+        "userCode": 100383,
+        "q": "mai-quoc-tuan-maiquoctuan1994gmailcom",
+        "locale": "vi",
+        "userType": "NEW_USER",
+        "userProfiles": [
+          "STUDENT"
+        ]
+      }
+    }
+  },
+  {
+    "url": "https://api-mankai.staging.rikkei.edu.vn/v1/notifications/unread-count",
+    "data": {
+      "statusCode": 200,
+      "data": 0
+    }
+  },
+  {
+    "url": "https://api-mankai.staging.rikkei.edu.vn/v1/student/courses",
+    "data": {
+      "statusCode": 200,
+      "data": [
+        {
+          "id": "686735b9d348bb1ef7783dc9",
+          "title": "KHO GẠCH N1",
+          "price": 11990000,
+          "thumbnailUrl": "https://rikkeiedu-storage.s3.ap-southeast-2.amazonaws.com/uploads/1753266697517-Thumbnail N1 Chill Class.png",
+          "status": "ACTIVE",
+          "type": "ADVANCED",
+          "description": "JLPT N1",
+          "classId": "687dc7afea1381040c98af71",
+          "progress": 43.810522451987595,
+          "pendingSesson": 4,
+          "sessonCount": 26
+        },
+        {
+          "id": "687a0a92ea1381040c9888ef",
+          "title": "KANJI 1500",
+          "price": 2999000,
+          "thumbnailUrl": "https://rikkeiedu-storage.s3.ap-southeast-2.amazonaws.com/uploads/1753266926123-Thumbnail Youtube - Kanji 1500.png",
+          "status": "ACTIVE",
+          "type": "ADVANCED",
+          "description": "Khoá học cấp tốc 1500 chữ Hán từ trình độ N5 ~ N2",
+          "classId": "687dc7afea1381040c98af71",
+          "progress": 22.5,
+          "pendingSesson": 5,
+          "sessonCount": 8
+        },
+        {
+          "id": "688602b72e50f58ae281847d",
+          "title": "ĐIỂM DANH - N1 Chill Class",
+          "price": 2999000,
+          "thumbnailUrl": "https://rikkeiedu-storage.s3.ap-southeast-2.amazonaws.com/uploads/1753612975692-Thumbnail_N1_ChillClass.png",
+          "status": "ACTIVE",
+          "type": "ADVANCED",
+          "description": "Record và bài quiz điểm danh lớp N1",
+          "classId": "687dc7afea1381040c98af71",
+          "progress": 33.0188679245283,
+          "pendingSesson": 31,
+          "sessonCount": 53
+        },
+        {
+          "id": "68bc09b11a1ded9b8b7a30ac",
+          "title": "90 NGÀY ĐÊM MANTEN N1",
+          "price": 0,
+          "thumbnailUrl": "https://rikkeiedu-storage.s3.ap-southeast-2.amazonaws.com/uploads/1757153710798-Logo_vuông.png",
+          "status": "ACTIVE",
+          "type": "ADVANCED",
+          "description": "Chiến dịch 90 ngày đêm Manten N1 🔥🔥🔥",
+          "classId": "687dc7afea1381040c98af71",
+          "progress": 58.60000000000001,
+          "pendingSesson": 4,
+          "sessonCount": 9
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://api-mankai.staging.rikkei.edu.vn/v1/student/sessons/69699824d17377ffa26c44ac",
+    "data": {
+      "statusCode": 200,
+      "data": {
+        "id": "69699824d17377ffa26c44ac",
+        "title": "KANJI 1500",
+        "pos": 0.515625,
+        "isRequired": false,
+        "progress": 0
+      }
+    }
+  },
+  {
+    "url": "https://api-mankai.staging.rikkei.edu.vn/v1/student/lessons?sessonId=69699824d17377ffa26c44ac",
+    "data": {
+      "statusCode": 200,
+      "data": [
+        {
+          "progress": 0,
+          "id": "69699f8cd17377ffa26c5597",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Giới thiệu khoá học",
+          "videoUrl": null,
+          "pos": 0
+        },
+        {
+          "progress": 0,
+          "id": "69699e44d17377ffa26c4f67",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Bộ Thủ",
+          "videoUrl": null,
+          "pos": 1
+        },
+        {
+          "progress": 0,
+          "id": "6969affcd17377ffa26c89bd",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 1",
+          "videoUrl": null,
+          "pos": 2
+        },
+        {
+          "progress": 0,
+          "id": "69699fbcd17377ffa26c55b0",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 1",
+          "videoUrl": null,
+          "pos": 3
+        },
+        {
+          "progress": 0,
+          "id": "69699ad2d17377ffa26c4745",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 1",
+          "videoUrl": null,
+          "pos": 5
+        },
+        {
+          "progress": 0,
+          "id": "6969a067d17377ffa26c5a35",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 2",
+          "videoUrl": null,
+          "pos": 6
+        },
+        {
+          "progress": 0,
+          "id": "6969a0d7d17377ffa26c6016",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 2",
+          "videoUrl": null,
+          "pos": 6.5
+        },
+        {
+          "progress": 0,
+          "id": "6969a087d17377ffa26c5e23",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 2",
+          "videoUrl": null,
+          "pos": 7
+        },
+        {
+          "progress": 0,
+          "id": "6969a0fcd17377ffa26c603b",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 3",
+          "videoUrl": null,
+          "pos": 8
+        },
+        {
+          "progress": 0,
+          "id": "6969a11cd17377ffa26c604d",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 3",
+          "videoUrl": null,
+          "pos": 9
+        },
+        {
+          "progress": 0,
+          "id": "6969a129d17377ffa26c606f",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 3",
+          "videoUrl": null,
+          "pos": 10
+        },
+        {
+          "progress": 0,
+          "id": "6969a15fd17377ffa26c60f9",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 4",
+          "videoUrl": null,
+          "pos": 11
+        },
+        {
+          "progress": 0,
+          "id": "6969a184d17377ffa26c6235",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 4",
+          "videoUrl": null,
+          "pos": 12
+        },
+        {
+          "progress": 0,
+          "id": "6969a1aad17377ffa26c627e",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 4",
+          "videoUrl": null,
+          "pos": 13
+        },
+        {
+          "progress": 0,
+          "id": "6969a1c4d17377ffa26c62c5",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 5",
+          "videoUrl": null,
+          "pos": 14
+        },
+        {
+          "progress": 0,
+          "id": "6969a1d8d17377ffa26c62e2",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 5",
+          "videoUrl": null,
+          "pos": 15
+        },
+        {
+          "progress": 0,
+          "id": "6969a1f0d17377ffa26c634b",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 5",
+          "videoUrl": null,
+          "pos": 16
+        },
+        {
+          "progress": 0,
+          "id": "6969a229d17377ffa26c63e6",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 6",
+          "videoUrl": null,
+          "pos": 17
+        },
+        {
+          "progress": 0,
+          "id": "6969a23cd17377ffa26c6411",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 6",
+          "videoUrl": null,
+          "pos": 18
+        },
+        {
+          "progress": 0,
+          "id": "6969a250d17377ffa26c6437",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 6",
+          "videoUrl": null,
+          "pos": 19
+        },
+        {
+          "progress": 0,
+          "id": "6969a272d17377ffa26c6470",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 7",
+          "videoUrl": null,
+          "pos": 20
+        },
+        {
+          "progress": 0,
+          "id": "6969a296d17377ffa26c648e",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 7",
+          "videoUrl": null,
+          "pos": 21
+        },
+        {
+          "progress": 0,
+          "id": "6969a2acd17377ffa26c64d5",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 7",
+          "videoUrl": null,
+          "pos": 22
+        },
+        {
+          "progress": 0,
+          "id": "6969a2e5d17377ffa26c6569",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 8",
+          "videoUrl": null,
+          "pos": 23
+        },
+        {
+          "progress": 0,
+          "id": "6969a2fcd17377ffa26c658b",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 8",
+          "videoUrl": null,
+          "pos": 24
+        },
+        {
+          "progress": 0,
+          "id": "6969a343d17377ffa26c65e4",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 8",
+          "videoUrl": null,
+          "pos": 25
+        },
+        {
+          "progress": 0,
+          "id": "6969a369d17377ffa26c6640",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 9",
+          "videoUrl": null,
+          "pos": 26
+        },
+        {
+          "progress": 0,
+          "id": "6969a380d17377ffa26c666d",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 9",
+          "videoUrl": null,
+          "pos": 27
+        },
+        {
+          "progress": 0,
+          "id": "6969a3acd17377ffa26c6699",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 9",
+          "videoUrl": null,
+          "pos": 28
+        },
+        {
+          "progress": 0,
+          "id": "6969a3d2d17377ffa26c66ea",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 10",
+          "videoUrl": null,
+          "pos": 29
+        },
+        {
+          "progress": 0,
+          "id": "6969a3e3d17377ffa26c6701",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 10",
+          "videoUrl": null,
+          "pos": 30
+        },
+        {
+          "progress": 0,
+          "id": "6969a3f1d17377ffa26c6727",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 10",
+          "videoUrl": null,
+          "pos": 31
+        },
+        {
+          "progress": 0,
+          "id": "6969a41cd17377ffa26c6752",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 11",
+          "videoUrl": null,
+          "pos": 32
+        },
+        {
+          "progress": 0,
+          "id": "6969a434d17377ffa26c675d",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 11",
+          "videoUrl": null,
+          "pos": 33
+        },
+        {
+          "progress": 0,
+          "id": "6969a44cd17377ffa26c6783",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 11",
+          "videoUrl": null,
+          "pos": 34
+        },
+        {
+          "progress": 0,
+          "id": "6969a46dd17377ffa26c67bb",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 12",
+          "videoUrl": null,
+          "pos": 35
+        },
+        {
+          "progress": 0,
+          "id": "6969a47ed17377ffa26c67c6",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 12",
+          "videoUrl": null,
+          "pos": 36
+        },
+        {
+          "progress": 0,
+          "id": "6969a497d17377ffa26c67ec",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 12",
+          "videoUrl": null,
+          "pos": 37
+        },
+        {
+          "progress": 0,
+          "id": "6969a4b5d17377ffa26c682c",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 13",
+          "videoUrl": null,
+          "pos": 38
+        },
+        {
+          "progress": 0,
+          "id": "6969a4c3d17377ffa26c6837",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 13",
+          "videoUrl": null,
+          "pos": 39
+        },
+        {
+          "progress": 0,
+          "id": "6969a4d3d17377ffa26c6865",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 13",
+          "videoUrl": null,
+          "pos": 40
+        },
+        {
+          "progress": 0,
+          "id": "6969a4eed17377ffa26c68b7",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 14",
+          "videoUrl": null,
+          "pos": 41
+        },
+        {
+          "progress": 0,
+          "id": "6969a503d17377ffa26c68ed",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 14",
+          "videoUrl": null,
+          "pos": 42
+        },
+        {
+          "progress": 0,
+          "id": "6969a517d17377ffa26c6947",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 14",
+          "videoUrl": null,
+          "pos": 43
+        },
+        {
+          "progress": 0,
+          "id": "6969a590d17377ffa26c6ae4",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 15",
+          "videoUrl": null,
+          "pos": 44
+        },
+        {
+          "progress": 0,
+          "id": "6969a5b1d17377ffa26c6b80",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 15",
+          "videoUrl": null,
+          "pos": 45
+        },
+        {
+          "progress": 0,
+          "id": "6969a5bcd17377ffa26c6b96",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 15",
+          "videoUrl": null,
+          "pos": 46
+        },
+        {
+          "progress": 0,
+          "id": "6969a5dfd17377ffa26c6be2",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 16",
+          "videoUrl": null,
+          "pos": 47
+        },
+        {
+          "progress": 0,
+          "id": "6969a5f5d17377ffa26c6c10",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 16",
+          "videoUrl": null,
+          "pos": 48
+        },
+        {
+          "progress": 0,
+          "id": "6969a618d17377ffa26c6c40",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 16",
+          "videoUrl": null,
+          "pos": 49
+        },
+        {
+          "progress": 0,
+          "id": "6969a81bd17377ffa26c6f4a",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 17",
+          "videoUrl": null,
+          "pos": 50
+        },
+        {
+          "progress": 0,
+          "id": "6969a855d17377ffa26c6f73",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 17",
+          "videoUrl": null,
+          "pos": 51
+        },
+        {
+          "progress": 0,
+          "id": "6969a861d17377ffa26c6f8e",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 17",
+          "videoUrl": null,
+          "pos": 52
+        },
+        {
+          "progress": 0,
+          "id": "6969a88ad17377ffa26c7013",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 18",
+          "videoUrl": null,
+          "pos": 53
+        },
+        {
+          "progress": 0,
+          "id": "6969a89cd17377ffa26c7026",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 18",
+          "videoUrl": null,
+          "pos": 54
+        },
+        {
+          "progress": 0,
+          "id": "6969a8aad17377ffa26c7045",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 18",
+          "videoUrl": null,
+          "pos": 55
+        },
+        {
+          "progress": 0,
+          "id": "6969a8c2d17377ffa26c706f",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 19",
+          "videoUrl": null,
+          "pos": 56
+        },
+        {
+          "progress": 0,
+          "id": "6969a8e7d17377ffa26c7082",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 19",
+          "videoUrl": null,
+          "pos": 57
+        },
+        {
+          "progress": 0,
+          "id": "6969a8f1d17377ffa26c7091",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 19",
+          "videoUrl": null,
+          "pos": 58
+        },
+        {
+          "progress": 0,
+          "id": "6969a911d17377ffa26c70cc",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 20",
+          "videoUrl": null,
+          "pos": 59
+        },
+        {
+          "progress": 0,
+          "id": "6969a925d17377ffa26c70ef",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 20",
+          "videoUrl": null,
+          "pos": 60
+        },
+        {
+          "progress": 0,
+          "id": "6969a935d17377ffa26c710e",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 20",
+          "videoUrl": null,
+          "pos": 61
+        },
+        {
+          "progress": 0,
+          "id": "6969a94fd17377ffa26c7155",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 21",
+          "videoUrl": null,
+          "pos": 62
+        },
+        {
+          "progress": 0,
+          "id": "6969a95ed17377ffa26c7160",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 21",
+          "videoUrl": null,
+          "pos": 63
+        },
+        {
+          "progress": 0,
+          "id": "6969a970d17377ffa26c7190",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 21",
+          "videoUrl": null,
+          "pos": 64
+        },
+        {
+          "progress": 0,
+          "id": "6969a984d17377ffa26c71d9",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 22",
+          "videoUrl": null,
+          "pos": 65
+        },
+        {
+          "progress": 0,
+          "id": "6969a996d17377ffa26c71ff",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 22",
+          "videoUrl": null,
+          "pos": 66
+        },
+        {
+          "progress": 0,
+          "id": "6969a9a3d17377ffa26c7232",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 22",
+          "videoUrl": null,
+          "pos": 67
+        },
+        {
+          "progress": 0,
+          "id": "6969a9b9d17377ffa26c7267",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 23",
+          "videoUrl": null,
+          "pos": 68
+        },
+        {
+          "progress": 0,
+          "id": "6969a9cdd17377ffa26c7289",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 23",
+          "videoUrl": null,
+          "pos": 69
+        },
+        {
+          "progress": 0,
+          "id": "6969a9d4d17377ffa26c7298",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 23",
+          "videoUrl": null,
+          "pos": 70
+        },
+        {
+          "progress": 0,
+          "id": "6969a9f8d17377ffa26c7325",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 24",
+          "videoUrl": null,
+          "pos": 71
+        },
+        {
+          "progress": 0,
+          "id": "6969aa0cd17377ffa26c7361",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 24",
+          "videoUrl": null,
+          "pos": 72
+        },
+        {
+          "progress": 0,
+          "id": "6969aa14d17377ffa26c7370",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 24",
+          "videoUrl": null,
+          "pos": 73
+        },
+        {
+          "progress": 0,
+          "id": "6969aa36d17377ffa26c73eb",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 25",
+          "videoUrl": null,
+          "pos": 74
+        },
+        {
+          "progress": 0,
+          "id": "6969aa4bd17377ffa26c7403",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 25",
+          "videoUrl": null,
+          "pos": 75
+        },
+        {
+          "progress": 0,
+          "id": "6969aa61d17377ffa26c7443",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 25",
+          "videoUrl": null,
+          "pos": 76
+        },
+        {
+          "progress": 0,
+          "id": "6969aa79d17377ffa26c7478",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 26",
+          "videoUrl": null,
+          "pos": 77
+        },
+        {
+          "progress": 0,
+          "id": "6969aa93d17377ffa26c748a",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 26",
+          "videoUrl": null,
+          "pos": 78
+        },
+        {
+          "progress": 0,
+          "id": "6969aa9cd17377ffa26c749a",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 26",
+          "videoUrl": null,
+          "pos": 79
+        },
+        {
+          "progress": 0,
+          "id": "6969aab6d17377ffa26c74f4",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 27",
+          "videoUrl": null,
+          "pos": 80
+        },
+        {
+          "progress": 0,
+          "id": "6969aadbd17377ffa26c7510",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 27",
+          "videoUrl": null,
+          "pos": 81
+        },
+        {
+          "progress": 0,
+          "id": "6969aaead17377ffa26c7538",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 27",
+          "videoUrl": null,
+          "pos": 82
+        },
+        {
+          "progress": 0,
+          "id": "6969ab07d17377ffa26c7585",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 28",
+          "videoUrl": null,
+          "pos": 83
+        },
+        {
+          "progress": 0,
+          "id": "6969ab1ed17377ffa26c7591",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 28",
+          "videoUrl": null,
+          "pos": 84
+        },
+        {
+          "progress": 0,
+          "id": "6969ab37d17377ffa26c75b7",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 28",
+          "videoUrl": null,
+          "pos": 85
+        },
+        {
+          "progress": 0,
+          "id": "6969ab51d17377ffa26c75f5",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 29",
+          "videoUrl": null,
+          "pos": 86
+        },
+        {
+          "progress": 0,
+          "id": "698151f23e959dca9bf9bb65",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 29",
+          "videoUrl": null,
+          "pos": 87
+        },
+        {
+          "progress": 0,
+          "id": "6969ab77d17377ffa26c7616",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 29",
+          "videoUrl": null,
+          "pos": 88
+        },
+        {
+          "progress": 0,
+          "id": "6969aba1d17377ffa26c766b",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 30",
+          "videoUrl": null,
+          "pos": 89
+        },
+        {
+          "progress": 0,
+          "id": "6969b9d2d17377ffa26cc275",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 30",
+          "videoUrl": null,
+          "pos": 89.5
+        },
+        {
+          "progress": 0,
+          "id": "6969ba12d17377ffa26cc455",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 30",
+          "videoUrl": null,
+          "pos": 89.75
+        },
+        {
+          "progress": 0,
+          "id": "6969abb5d17377ffa26c7677",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 31",
+          "videoUrl": null,
+          "pos": 90
+        },
+        {
+          "progress": 0,
+          "id": "6969abcbd17377ffa26c76af",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 31",
+          "videoUrl": null,
+          "pos": 91
+        },
+        {
+          "progress": 0,
+          "id": "6969abd3d17377ffa26c76ce",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 31",
+          "videoUrl": null,
+          "pos": 92
+        },
+        {
+          "progress": 0,
+          "id": "6969abeed17377ffa26c7703",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 32",
+          "videoUrl": null,
+          "pos": 93
+        },
+        {
+          "progress": 0,
+          "id": "6969ac00d17377ffa26c771a",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 32",
+          "videoUrl": null,
+          "pos": 94
+        },
+        {
+          "progress": 0,
+          "id": "6969ac08d17377ffa26c7743",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 32",
+          "videoUrl": null,
+          "pos": 95
+        },
+        {
+          "progress": 0,
+          "id": "6969ac1ed17377ffa26c778f",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 33",
+          "videoUrl": null,
+          "pos": 96
+        },
+        {
+          "progress": 0,
+          "id": "6969ac3ad17377ffa26c77b4",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 33",
+          "videoUrl": null,
+          "pos": 97
+        },
+        {
+          "progress": 0,
+          "id": "6969ac46d17377ffa26c781c",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 33",
+          "videoUrl": null,
+          "pos": 98
+        },
+        {
+          "progress": 0,
+          "id": "6969ac65d17377ffa26c78b4",
+          "type": "VIDEO",
+          "isRequired": false,
+          "title": "Kanji Ninja 1500 - Buổi 34",
+          "videoUrl": null,
+          "pos": 99
+        },
+        {
+          "progress": 0,
+          "id": "6969ac77d17377ffa26c78df",
+          "type": "FLASH_CARD",
+          "isRequired": false,
+          "title": "Flashcard Buổi 34",
+          "videoUrl": null,
+          "pos": 100
+        },
+        {
+          "progress": 0,
+          "id": "6969ac82d17377ffa26c7915",
+          "type": "QUIZ",
+          "isRequired": false,
+          "title": "Quiz - Buổi 34",
+          "videoUrl": null,
+          "pos": 101
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://api-mankai.staging.rikkei.edu.vn/v1/exam-lesson/user/69699ad2d17377ffa26c4745",
+    "data": {
+      "statusCode": 200,
+      "data": {
+        "encrypted": true,
+        "data": "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"
+      }
+    }
+  },
+  {
+    "url": "https://api-mankai.staging.rikkei.edu.vn/v1/exam-lesson/user/69699ad2d17377ffa26c4745",
+    "data": {
+      "statusCode": 200,
+      "data": {
+        "encrypted": true,
+        "data": "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"
+      }
+    }
+  },
+  {
+    "url": "https://api-mankai.staging.rikkei.edu.vn/v1/student/lessons/69699ad2d17377ffa26c4745",
+    "data": {
+      "statusCode": 200,
+      "data": {
+        "progress": 0,
+        "id": "69699ad2d17377ffa26c4745",
+        "type": "QUIZ",
+        "isRequired": false,
+        "title": "Quiz - Buổi 1",
+        "videoUrl": null,
+        "pos": 5
+      }
+    }
+  },
+  {
+    "url": "https://api-mankai.staging.rikkei.edu.vn/v1/student/exam-results/exam/687a16afea1381040c988cd4/user/6899478db1b65316744e3a3e",
+    "data": {
+      "statusCode": 200,
+      "data": [
+        {
+          "id": "68c947a0ba3ecaa9da221f59",
+          "examName": "Quiz - Buổi 1",
+          "point": 9.117647058823529,
+          "completionTime": "2025-09-16T11:18:56.544Z"
+        },
+        {
+          "id": "69290b85d6aa7314b0304648",
+          "examName": "Quiz - Buổi 1",
+          "point": 9.411764705882353,
+          "completionTime": "2025-11-28T02:40:05.924Z"
+        }
+      ]
+    }
+  }
+]
