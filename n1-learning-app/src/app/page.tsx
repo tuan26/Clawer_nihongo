@@ -1,4 +1,5 @@
 'use client';
+// Build Version: 1.0.1 - Optimization and skill-based interleaving
 
 import { useState, useEffect, useMemo } from 'react';
 import { generateRoadmap, DailyRoadmap, getCourseStats } from '../lib/roadmap';
