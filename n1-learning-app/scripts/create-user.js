@@ -32,6 +32,49 @@ function loadEnv() {
   return env;
 }
 
+// Các câu lệnh SQL khởi tạo bảng nếu chưa có
+const INIT_TABLES_SQL = [
+  `CREATE TABLE IF NOT EXISTS users (
+    id TEXT PRIMARY KEY,
+    email TEXT UNIQUE NOT NULL,
+    password_hash TEXT NOT NULL,
+    created_at TEXT NOT NULL
+  )`,
+  `CREATE TABLE IF NOT EXISTS vocabulary (
+    id TEXT PRIMARY KEY,
+    user_id TEXT NOT NULL,
+    word TEXT NOT NULL,
+    reading TEXT,
+    meaning_vi TEXT,
+    example_ja TEXT,
+    example_vi TEXT,
+    tags TEXT,
+    source TEXT,
+    status TEXT NOT NULL DEFAULT 'new',
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL,
+    next_review_at TEXT NOT NULL,
+    interval_days INTEGER NOT NULL DEFAULT 0,
+    ease_factor REAL NOT NULL DEFAULT 2.5,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+  )`,
+  `CREATE TABLE IF NOT EXISTS vocabulary_reviews (
+    id TEXT PRIMARY KEY,
+    vocabulary_id TEXT NOT NULL,
+    user_id TEXT NOT NULL,
+    reviewed_at TEXT NOT NULL,
+    rating TEXT NOT NULL,
+    interval_before INTEGER NOT NULL,
+    interval_after INTEGER NOT NULL,
+    FOREIGN KEY (vocabulary_id) REFERENCES vocabulary(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+  )`,
+  `CREATE INDEX IF NOT EXISTS idx_vocab_user ON vocabulary(user_id)`,
+  `CREATE INDEX IF NOT EXISTS idx_vocab_next_review ON vocabulary(next_review_at)`,
+  `CREATE INDEX IF NOT EXISTS idx_reviews_vocab ON vocabulary_reviews(vocabulary_id)`,
+  `CREATE INDEX IF NOT EXISTS idx_reviews_user ON vocabulary_reviews(user_id)`
+];
+
 async function main() {
   // Lấy email và password từ đối số dòng lệnh (Command Line Arguments)
   const args = process.argv.slice(2);
@@ -51,9 +94,7 @@ async function main() {
 
   if (!url) {
     console.error('\x1b[31m%s\x1b[0m', 'Lỗi: Chưa tìm thấy biến môi trường TURSO_DATABASE_URL trong file .env.local');
-    console.log('Vui lòng tạo file .env.local trong thư mục n1-learning-app với nội dung:');
-    console.log('TURSO_DATABASE_URL=libsql://your-database.turso.io');
-    console.log('TURSO_AUTH_TOKEN=your-auth-token');
+    console.log('Vui lòng kiểm tra lại file .env.local trong thư mục n1-learning-app.');
     process.exit(1);
   }
 
@@ -65,9 +106,15 @@ async function main() {
   });
 
   try {
+    // 1. Tự động kiểm tra và tạo bảng nếu chưa có (Khởi tạo Database)
+    console.log('Đang kiểm tra và khởi tạo cấu trúc bảng trên Turso Database...');
+    const batchQueries = INIT_TABLES_SQL.map(sql => ({ sql, args: [] }));
+    await client.batch(batchQueries);
+    console.log('Khởi tạo cấu trúc cơ sở dữ liệu thành công!');
+
     const email = emailInput.toLowerCase().trim();
     
-    // 1. Kiểm tra xem user đã tồn tại trong Turso chưa
+    // 2. Kiểm tra xem user đã tồn tại chưa
     const checkUser = await client.execute({
       sql: 'SELECT id FROM users WHERE email = ? LIMIT 1',
       args: [email]
@@ -78,13 +125,13 @@ async function main() {
       process.exit(0);
     }
 
-    // 2. Hash mật khẩu
+    // 3. Hash mật khẩu
     console.log('Đang mã hóa mật khẩu bảo mật...');
     const passwordHash = await bcrypt.hash(passwordInput, 10);
     const userId = crypto.randomUUID ? crypto.randomUUID() : require('crypto').randomBytes(16).toString('hex');
     const nowStr = new Date().toISOString();
 
-    // 3. Insert tài khoản vào bảng users
+    // 4. Insert tài khoản vào bảng users
     console.log(`Đang tạo tài khoản ${email} trong SQLite...`);
     await client.execute({
       sql: 'INSERT INTO users (id, email, password_hash, created_at) VALUES (?, ?, ?, ?)',
@@ -98,7 +145,7 @@ async function main() {
     console.log(`Giờ đây bạn có thể dùng tài khoản này đăng nhập vào ứng dụng Nihongo Mastery!`);
 
   } catch (error) {
-    console.error('\x1b[31m%s\x1b[0m', 'Đã xảy ra lỗi khi ghi dữ liệu lên Turso:', error);
+    console.error('\x1b[31m%s\x1b[0m', 'Đã xảy ra lỗi khi làm việc với Turso:', error);
   } finally {
     process.exit(0);
   }
