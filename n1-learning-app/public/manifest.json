@@ -1,0 +1,17 @@
+{
+  "name": "N1 Mastery Japanese Learning",
+  "short_name": "N1 Mastery",
+  "description": "Hệ thống học tiếng Nhật N1 cá nhân và ghi nhớ từ vựng",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
