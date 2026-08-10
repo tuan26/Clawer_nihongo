@@ -193,11 +193,13 @@ export async function getUnsyncedVocabulary(): Promise<LocalVocabulary[]> {
   return new Promise((resolve, reject) => {
     const transaction = db.transaction(['vocabulary'], 'readonly');
     const store = transaction.objectStore('vocabulary');
-    const index = store.index('synced');
-    // filter synced === false (or 0)
-    const request = index.getAll(IDBKeyRange.only(false));
+    // Không dùng index 'synced': boolean không phải key hợp lệ của IndexedDB
+    const request = store.getAll();
 
-    request.onsuccess = () => resolve(request.result || []);
+    request.onsuccess = () => {
+      const results = (request.result || []).filter((item: any) => !item.synced);
+      resolve(results);
+    };
     request.onerror = () => reject(request.error);
   });
 }
@@ -207,10 +209,13 @@ export async function getUnsyncedReviews(): Promise<LocalReview[]> {
   return new Promise((resolve, reject) => {
     const transaction = db.transaction(['reviews'], 'readonly');
     const store = transaction.objectStore('reviews');
-    const index = store.index('synced');
-    const request = index.getAll(IDBKeyRange.only(false));
+    // Không dùng index 'synced': boolean không phải key hợp lệ của IndexedDB
+    const request = store.getAll();
 
-    request.onsuccess = () => resolve(request.result || []);
+    request.onsuccess = () => {
+      const results = (request.result || []).filter((item: any) => !item.synced);
+      resolve(results);
+    };
     request.onerror = () => reject(request.error);
   });
 }
