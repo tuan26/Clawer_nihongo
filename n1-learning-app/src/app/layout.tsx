@@ -6,8 +6,8 @@ import AuthGuard from '../components/AuthGuard';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'N1 Personal Learning',
-  description: 'App học N1 cá nhân (Tháng 5 - Tháng 11)',
+  title: 'Nihongo Personal Learning',
+  description: 'App học tiếng Nhật cá nhân (Tháng 5 - Tháng 11)',
 };
 
 export default function RootLayout({

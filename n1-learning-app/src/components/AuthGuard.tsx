@@ -24,13 +24,11 @@ export default function AuthGuard({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<{ id: string; email: string } | null>(null);
   const [loading, setLoading] = useState(true);
   
-  // States cho Form Login/Register
-  const [isRegister, setIsRegister] = useState(false);
+  // States cho Form Login
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [formError, setFormError] = useState('');
-  const [formSuccess, setFormSuccess] = useState('');
   const [formLoading, setFormLoading] = useState(false);
 
   const checkUserSession = async () => {
@@ -60,13 +58,10 @@ export default function AuthGuard({ children }: { children: React.ReactNode }) {
   const handleAuthSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormError('');
-    setFormSuccess('');
     setFormLoading(true);
 
-    const url = isRegister ? '/api/auth/register' : '/api/auth/login';
-
     try {
-      const res = await fetch(url, {
+      const res = await fetch('/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
@@ -78,41 +73,13 @@ export default function AuthGuard({ children }: { children: React.ReactNode }) {
         throw new Error(json.error || 'Đã có lỗi xảy ra. Vui lòng thử lại.');
       }
 
-      if (isRegister) {
-        setFormSuccess('Đăng ký tài khoản thành công! Đang tự động chuyển hướng đăng nhập...');
-        // Tự động đăng nhập sau khi đăng ký thành công
-        setTimeout(async () => {
-          try {
-            const loginRes = await fetch('/api/auth/login', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ email, password }),
-            });
-            if (loginRes.ok) {
-              const loginJson = await loginRes.json();
-              setUser(loginJson.data);
-              // Clear IndexedDB khi chuyển tài khoản mới
-              if (typeof window !== 'undefined') {
-                const { clearAllData } = await import('../lib/indexedDbHelper');
-                await clearAllData();
-              }
-            }
-          } catch (e) {
-            setIsRegister(false);
-            setFormSuccess('');
-          } finally {
-            setFormLoading(false);
-          }
-        }, 1500);
-      } else {
-        setUser(json.data);
-        // Khi đăng nhập thành công, xóa sạch IndexedDB local cũ để sync dữ liệu từ cloud của user mới xuống
-        if (typeof window !== 'undefined') {
-          const { clearAllData } = await import('../lib/indexedDbHelper');
-          await clearAllData();
-        }
-        setFormLoading(false);
+      setUser(json.data);
+      // Khi đăng nhập thành công, xóa sạch IndexedDB local cũ để sync dữ liệu từ cloud của user mới xuống
+      if (typeof window !== 'undefined') {
+        const { clearAllData } = await import('../lib/indexedDbHelper');
+        await clearAllData();
       }
+      setFormLoading(false);
     } catch (err: any) {
       setFormError(err.message || 'Lỗi kết nối server.');
       setFormLoading(false);
@@ -154,7 +121,7 @@ export default function AuthGuard({ children }: { children: React.ReactNode }) {
     );
   }
 
-  // 2. LOGIN / REGISTER SCREEN (PREMIUM DESIGN)
+  // 2. LOGIN SCREEN (PREMIUM DESIGN)
   if (!user) {
     return (
       <div className="min-h-screen w-full relative flex items-center justify-center p-4 overflow-hidden bg-slate-950">
@@ -167,19 +134,19 @@ export default function AuthGuard({ children }: { children: React.ReactNode }) {
             <div className="inline-flex p-3.5 bg-blue-500/10 border border-blue-500/20 rounded-2xl text-blue-400 mb-2">
               <BookOpen className="w-8 h-8" />
             </div>
-            <h1 className="text-3xl font-extrabold tracking-tight text-white">N1 Mastery 2026</h1>
+            <h1 className="text-3xl font-extrabold tracking-tight text-white">Nihongo Mastery 2026</h1>
             <p className="text-slate-400 text-sm max-w-xs mx-auto">
-              Ứng dụng học N1 & Ghi chú từ vựng cá nhân. Đăng nhập để đồng bộ dữ liệu.
+              Ứng dụng học tiếng Nhật & Ghi chú từ vựng cá nhân. Đăng nhập để đồng bộ dữ liệu.
             </p>
           </div>
 
           <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6">
             <div className="text-center">
               <h2 className="text-xl font-bold text-white">
-                {isRegister ? 'Đăng ký tài khoản mới' : 'Chào mừng quay trở lại'}
+                Chào mừng quay trở lại
               </h2>
               <p className="text-xs text-slate-400 mt-1">
-                {isRegister ? 'Tạo tài khoản học tập để lưu trữ từ vựng trực tuyến' : 'Nhập thông tin tài khoản của bạn để tiếp tục'}
+                Nhập thông tin tài khoản của bạn để tiếp tục
               </p>
             </div>
 
@@ -187,13 +154,6 @@ export default function AuthGuard({ children }: { children: React.ReactNode }) {
               <div className="bg-rose-500/10 border border-rose-500/20 text-rose-300 p-3.5 rounded-2xl text-xs flex items-start gap-2.5">
                 <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
                 <span>{formError}</span>
-              </div>
-            )}
-
-            {formSuccess && (
-              <div className="bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 p-3.5 rounded-2xl text-xs flex items-start gap-2.5">
-                <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span>{formSuccess}</span>
               </div>
             )}
 
@@ -241,22 +201,9 @@ export default function AuthGuard({ children }: { children: React.ReactNode }) {
                 className="w-full py-3.5 mt-2 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white rounded-2xl font-bold text-sm shadow-lg shadow-blue-500/20 transition-all disabled:opacity-50 flex items-center justify-center gap-1.5"
               >
                 {formLoading && <RefreshCw className="w-4 h-4 animate-spin" />}
-                {isRegister ? 'Đăng ký ngay' : 'Đăng nhập'}
+                Đăng nhập
               </button>
             </form>
-
-            <div className="text-center border-t border-white/5 pt-4">
-              <button
-                onClick={() => {
-                  setIsRegister(!isRegister);
-                  setFormError('');
-                  setFormSuccess('');
-                }}
-                className="text-xs text-blue-400 font-bold hover:text-blue-300 transition-colors"
-              >
-                {isRegister ? 'Đã có tài khoản? Đăng nhập ngay' : 'Chưa có tài khoản? Đăng ký tại đây'}
-              </button>
-            </div>
           </div>
         </div>
       </div>
@@ -270,10 +217,10 @@ export default function AuthGuard({ children }: { children: React.ReactNode }) {
         <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Link href="/" className="font-extrabold text-lg tracking-tight text-white hover:text-blue-400 transition-colors">
-              🎓 N1 Mastery 2026
+              🎓 Nihongo Mastery 2026
             </Link>
             <div className="hidden md:block text-xs font-semibold px-2.5 py-1 bg-slate-800 text-slate-400 rounded-full">
-              Lộ trình 214 Ngày Đêm
+              Lộ trình học tiếng Nhật
             </div>
           </div>
           
