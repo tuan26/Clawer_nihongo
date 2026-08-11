@@ -4,10 +4,13 @@
 import { useState, useEffect, useMemo } from 'react';
 import { generateRoadmap, generateFocusRoadmap, DailyRoadmap, getCourseStats, getFocusStats, getCategory } from '../lib/roadmap';
 import { differenceInDays, format } from 'date-fns';
-import { CheckCircle2, PlayCircle, BookOpen, Search, Headphones, BookOpenCheck, FileText } from 'lucide-react';
+import { CheckCircle2, PlayCircle, BookOpen, Search, Headphones, BookOpenCheck, Check } from 'lucide-react';
 import Link from 'next/link';
 import clsx from 'clsx';
 import VocabManager from '../components/VocabManager';
+import { getAllProgress } from '../lib/indexedDbHelper';
+import { syncLessonData, migrateLegacyProgress } from '../lib/syncEngine';
+import { useAuth } from '../components/AuthGuard';
 
 type TabType = 'all' | 'focus' | 'vocab';
 
@@ -22,6 +25,7 @@ const CATEGORY_BADGE: Record<string, { label: string; color: string }> = {
 };
 
 export default function Home() {
+  const { user } = useAuth();
   const [activeTab, setActiveTab] = useState<TabType>('all');
   const [currentDayStrAll, setCurrentDayStrAll] = useState<string>('');
   const [currentDayStrFocus, setCurrentDayStrFocus] = useState<string>('');
@@ -64,11 +68,45 @@ export default function Home() {
     setCurrentDayStrAll(initDayStr(roadmapAll, '2026-05-01', 'n1_selected_day_all'));
     setCurrentDayStrFocus(initDayStr(roadmapFocus, '2026-06-08', 'n1_selected_day_focus'));
 
-    // Load completed state
+    // Hiển thị ngay trạng thái trong localStorage để không bị nháy,
+    // sau đó useEffect bên dưới sẽ thay bằng dữ liệu chuẩn từ IndexedDB/cloud.
     const saved = localStorage.getItem('n1_completed');
     if (saved) setCompletedLessons(JSON.parse(saved));
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Nạp tiến độ từ IndexedDB và kéo bản mới nhất từ Turso về
+  useEffect(() => {
+    if (!user) return;
+
+    let cancelled = false;
+
+    const loadProgress = async () => {
+      await migrateLegacyProgress(user.id);
+
+      const applyFromDb = async () => {
+        const all = await getAllProgress(user.id);
+        if (cancelled) return;
+
+        const map: Record<string, boolean> = {};
+        for (const item of all) {
+          if (item.completed) map[item.lesson_id] = true;
+        }
+        setCompletedLessons(map);
+        localStorage.setItem('n1_completed', JSON.stringify(map));
+      };
+
+      await applyFromDb();
+      // Đồng bộ với cloud rồi nạp lại: tiến độ đánh dấu ở máy khác cũng hiện ra.
+      const res = await syncLessonData(user.id);
+      if (res.success) await applyFromDb();
+    };
+
+    loadProgress().catch((e) => console.error('Lỗi khi nạp tiến độ:', e));
+    return () => {
+      cancelled = true;
+    };
+  }, [user]);
 
   if (!mounted) return <div className="p-8 text-center text-slate-400 animate-pulse text-lg">Đang tải lộ trình...</div>;
 
@@ -240,13 +278,15 @@ export default function Home() {
                   const cat = getCategory(item.lesson, item.courseTitle);
                   const badge = CATEGORY_BADGE[cat] || CATEGORY_BADGE['OTHER'];
                   return (
-                    <Link 
-                      href={`/lesson/${item.lesson.id}`} 
+                    <Link
+                      href={`/lesson/${item.lesson.id}`}
                       key={item.lesson.id + idx}
                       className={clsx(
+                        // Bài đã xong dùng viền trái xanh đậm + nền xanh nhạt để phân biệt
+                        // ngay từ xa, thay vì chỉ đổi icon như trước.
                         "group flex items-start gap-4 p-4 rounded-xl border transition-all hover:shadow-md",
                         isCompleted
-                          ? "bg-slate-50 border-slate-200"
+                          ? "bg-green-50/70 border-green-200 border-l-4 border-l-green-500"
                           : isFocus
                             ? "bg-white border-emerald-100 hover:border-emerald-300"
                             : "bg-white border-blue-100 hover:border-blue-300"
@@ -254,7 +294,9 @@ export default function Home() {
                     >
                       <div className="mt-1 flex-shrink-0">
                         {isCompleted ? (
-                          <CheckCircle2 className="w-6 h-6 text-green-500" />
+                          <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center shadow-sm">
+                            <Check className="w-4 h-4 text-white stroke-[3]" />
+                          </div>
                         ) : (
                           <PlayCircle className={clsx(
                             "w-6 h-6 group-hover:scale-110 transition-transform",
@@ -262,16 +304,24 @@ export default function Home() {
                           )} />
                         )}
                       </div>
-                      <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-1">
+                      <div className="flex-1 min-w-0">
+                        <div className="flex flex-wrap items-center gap-2 mb-1">
                           <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
                             {item.courseTitle}
                           </span>
                           <span className={clsx("text-[10px] font-bold px-2 py-0.5 rounded-full border", badge.color)}>
                             {badge.label}
                           </span>
+                          {isCompleted && (
+                            <span className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-full bg-green-500 text-white">
+                              <Check className="w-3 h-3 stroke-[3]" /> ĐÃ HOÀN THÀNH
+                            </span>
+                          )}
                         </div>
-                        <h3 className={clsx("font-semibold text-lg line-clamp-2", isCompleted ? "text-slate-600" : "text-slate-900")}>
+                        <h3 className={clsx(
+                          "font-semibold text-lg line-clamp-2",
+                          isCompleted ? "text-green-900/70" : "text-slate-900"
+                        )}>
                           {item.lesson.title}
                         </h3>
                       </div>

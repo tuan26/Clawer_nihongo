@@ -39,8 +39,35 @@ CREATE TABLE IF NOT EXISTS vocabulary_reviews (
   FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
+-- Bảng lưu tiến độ hoàn thành từng bài học
+-- id dùng dạng '<user_id>::<lesson_id>' để mỗi user chỉ có đúng một dòng cho một bài.
+CREATE TABLE IF NOT EXISTS lesson_progress (
+  id TEXT PRIMARY KEY,
+  user_id TEXT NOT NULL,
+  lesson_id TEXT NOT NULL,
+  completed INTEGER NOT NULL DEFAULT 0, -- SQLite không có kiểu boolean: 0 = chưa, 1 = rồi
+  completed_at TEXT,
+  updated_at TEXT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- Bảng lưu ghi chú (memo) của từng bài học: một bài một memo
+-- images là JSON string chứa mảng data URL của ảnh đã được nén ở phía client.
+CREATE TABLE IF NOT EXISTS lesson_memos (
+  id TEXT PRIMARY KEY,
+  user_id TEXT NOT NULL,
+  lesson_id TEXT NOT NULL,
+  content TEXT NOT NULL DEFAULT '',
+  images TEXT NOT NULL DEFAULT '[]',
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
 -- Tạo Index để truy vấn nhanh hơn
 CREATE INDEX IF NOT EXISTS idx_vocab_user ON vocabulary(user_id);
 CREATE INDEX IF NOT EXISTS idx_vocab_next_review ON vocabulary(next_review_at);
 CREATE INDEX IF NOT EXISTS idx_reviews_vocab ON vocabulary_reviews(vocabulary_id);
 CREATE INDEX IF NOT EXISTS idx_reviews_user ON vocabulary_reviews(user_id);
+CREATE INDEX IF NOT EXISTS idx_progress_user ON lesson_progress(user_id);
+CREATE INDEX IF NOT EXISTS idx_memos_user ON lesson_memos(user_id);

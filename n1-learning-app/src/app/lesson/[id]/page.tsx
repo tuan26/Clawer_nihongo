@@ -6,33 +6,63 @@ import data from '../../../data/n1_data.json';
 import { ArrowLeft, CheckCircle2, ChevronLeft, ChevronRight, PlayCircle, FileText, LayoutTemplate, HelpCircle, Download, ExternalLink, Volume2, RotateCcw } from 'lucide-react';
 import Link from 'next/link';
 import clsx from 'clsx';
+import LessonMemo from '../../../components/LessonMemo';
+import { getProgress, saveProgress, lessonKey } from '../../../lib/indexedDbHelper';
+import { syncLessonData, migrateLegacyProgress } from '../../../lib/syncEngine';
+import { useAuth } from '../../../components/AuthGuard';
 
 export default function LessonPage() {
   const params = useParams();
   const router = useRouter();
   const lessonId = params.id as string;
+  const { user } = useAuth();
 
   const [completed, setCompleted] = useState(false);
-  
+
   const lesson = data.lessons.find((l: any) => l.id === lessonId);
   const resource = data.resources.find((r: any) => r.lesson_id === lessonId);
 
   useEffect(() => {
-    const saved = localStorage.getItem('n1_completed');
-    if (saved) {
-      const parsed = JSON.parse(saved);
-      if (parsed[lessonId]) {
-        setCompleted(true);
-      }
-    }
-  }, [lessonId]);
+    if (!user) return;
 
-  const toggleComplete = () => {
+    let cancelled = false;
+    const load = async () => {
+      await migrateLegacyProgress(user.id);
+      const saved = await getProgress(user.id, lessonId);
+      if (!cancelled) setCompleted(!!saved?.completed);
+    };
+
+    load().catch((e) => console.error('Lỗi khi đọc tiến độ bài học:', e));
+    return () => {
+      cancelled = true;
+    };
+  }, [user, lessonId]);
+
+  const toggleComplete = async () => {
+    if (!user) return;
+
+    const next = !completed;
+    const now = new Date().toISOString();
+    setCompleted(next);
+
+    // Ghi vào IndexedDB trước để trạng thái không mất khi mất mạng,
+    // đồng thời vẫn cập nhật localStorage cho phần hiển thị cũ.
+    await saveProgress({
+      id: lessonKey(user.id, lessonId),
+      user_id: user.id,
+      lesson_id: lessonId,
+      completed: next,
+      completed_at: next ? now : null,
+      updated_at: now,
+      synced: false,
+    });
+
     const saved = localStorage.getItem('n1_completed') || '{}';
     const parsed = JSON.parse(saved);
-    parsed[lessonId] = !completed;
+    parsed[lessonId] = next;
     localStorage.setItem('n1_completed', JSON.stringify(parsed));
-    setCompleted(!completed);
+
+    syncLessonData(user.id).catch((e) => console.error('Lỗi đồng bộ tiến độ:', e));
   };
 
   if (!lesson) {
@@ -211,15 +241,16 @@ export default function LessonPage() {
           </h1>
         </div>
         
-        <button 
+        <button
           onClick={toggleComplete}
+          title={completed ? 'Bấm để bỏ đánh dấu hoàn thành' : 'Đánh dấu bài học này đã hoàn thành'}
           className={`shrink-0 flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all shadow-sm ${
-            completed 
-              ? 'bg-green-100 text-green-700 border border-green-200 hover:bg-green-200' 
+            completed
+              ? 'bg-green-600 text-white border border-green-700 hover:bg-green-700'
               : 'bg-blue-600 text-white hover:bg-blue-700 hover:shadow-md'
           }`}
         >
-          <CheckCircle2 className={`w-5 h-5 ${completed ? 'text-green-600' : 'text-white/80'}`} />
+          <CheckCircle2 className="w-5 h-5 text-white/90" />
           {completed ? 'Đã hoàn thành' : 'Đánh dấu hoàn thành'}
         </button>
       </div>
@@ -227,6 +258,8 @@ export default function LessonPage() {
       <div className="mt-8">
         {renderContent()}
       </div>
+
+      <LessonMemo lessonId={lessonId} />
     </div>
   );
 }
