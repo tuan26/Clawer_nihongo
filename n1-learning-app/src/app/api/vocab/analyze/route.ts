@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { geminiGenerateUrl, extractGeminiText, parseJsonLoose, GEMINI_JSON_CONFIG } from '../../../../lib/aiConfig';
 
 // Bộ từ điển tĩnh phong phú phục vụ chế độ Offline / Mock AI
 const MOCK_DICTIONARY: Record<string, {
@@ -204,6 +205,10 @@ async function analyzeWord(word: string, geminiKey?: string, openaiKey?: string)
   Chỉ trả về chuỗi JSON thô, không bao gồm ký hiệu markdown \`\`\`json \`\`\`, không giải thích gì thêm ngoài JSON.
   `;
 
+  // Giữ lại lỗi thật của lần gọi AI gần nhất để báo cho người dùng, thay vì luôn
+  // nói 'chưa cấu hình API Key' kể cả khi Key có nhưng request bị lỗi.
+  let lastError = '';
+
   // 2. Sử dụng OpenAI nếu có Key
   if (openaiKey) {
     try {
@@ -221,43 +226,53 @@ async function analyzeWord(word: string, geminiKey?: string, openaiKey?: string)
       });
 
       const resJson = await response.json();
+      if (!response.ok) {
+        throw new Error(`OpenAI API lỗi: ${resJson?.error?.message || `HTTP ${response.status}`}`);
+      }
       const content = resJson.choices[0].message.content;
       return JSON.parse(content);
-    } catch (e) {
+    } catch (e: any) {
       console.error('Lỗi khi gọi OpenAI API, chuyển sang mock:', e);
+      lastError = e.message || String(e);
     }
   }
 
   // 3. Sử dụng Gemini nếu có Key
   if (geminiKey) {
     try {
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${geminiKey}`, {
+      const response = await fetch(geminiGenerateUrl(geminiKey), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
           contents: [{ parts: [{ text: promptText }] }],
-          generationConfig: {
-            responseMimeType: 'application/json'
-          }
+          generationConfig: GEMINI_JSON_CONFIG
         })
       });
 
       const resJson = await response.json();
-      const content = resJson.candidates[0].content.parts[0].text;
-      return JSON.parse(content);
-    } catch (e) {
+      const content = extractGeminiText(response.status, resJson);
+      return parseJsonLoose(content);
+    } catch (e: any) {
       console.error('Lỗi khi gọi Gemini API, chuyển sang mock:', e);
+      lastError = e.message || String(e);
     }
   }
 
   // 4. Fallback về Mock AI
   const cleanWord = word.trim();
+  const hasKey = !!(geminiKey || openaiKey);
+  const reason = lastError
+    ? lastError
+    : hasKey
+      ? 'Không gọi được AI'
+      : 'Chưa cấu hình API Key trên Server';
+
   return {
     word: cleanWord,
-    reading: 'Đang chờ API Key',
-    meaning_vi: `Nghĩa của "${cleanWord}" (Chưa cấu hình API Key trên Server để phân tích tự động)`,
+    reading: hasKey ? 'Không phân tích được' : 'Đang chờ API Key',
+    meaning_vi: `Nghĩa của "${cleanWord}" (${reason})`,
     example_ja: `${cleanWord}を使用します。`,
     example_vi: `Sử dụng từ "${cleanWord}". (Mock)`,
     tags: ['N1'],

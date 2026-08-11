@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { geminiGenerateUrl, extractGeminiText, parseJsonLoose, GEMINI_JSON_CONFIG } from '../../../../lib/aiConfig';
 
 export async function POST(request: Request) {
   try {
@@ -60,17 +61,17 @@ export async function POST(request: Request) {
       // Gọi Gemini
       if (geminiKey) {
         try {
-          const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${geminiKey}`, {
+          const response = await fetch(geminiGenerateUrl(geminiKey), {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
               contents: [{ parts: [{ text: promptText }] }],
-              generationConfig: { responseMimeType: 'application/json' }
+              generationConfig: GEMINI_JSON_CONFIG
             })
           });
           const resJson = await response.json();
-          const content = resJson.candidates[0].content.parts[0].text;
-          const questions = JSON.parse(content);
+          const content = extractGeminiText(response.status, resJson);
+          const questions = parseJsonLoose(content);
           const quizData = Array.isArray(questions) ? questions : (questions.questions || questions.quiz || []);
           return NextResponse.json({ success: true, data: quizData });
         } catch (e) {
